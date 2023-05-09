@@ -1,0 +1,16 @@
+from random import *
+
+class PogodiBroj:
+    def __init__(self, n=100):
+        self.N = randint(1, n)
+        self.P = 0
+
+    def pokusaj(self, t):
+        self.P += 1
+        if self.N == t:
+            return self.P
+        elif self.N > t:
+            return 'Traženi broj je veći'
+        else:
+            return 'Tražei broj je manji'
+
